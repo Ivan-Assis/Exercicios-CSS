@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+     "header header header header",
+     "grupo grupo grupo grupo",
+     "grupo grupo grupo grupo",
+     "grupo grupo grupo grupo",
+     "footer footer footer footer";
+
+}
+
+header{
+    grid-area: header;
+}
+.grupo {
+    
+    display: flex;
+    justify-content: space-around;
+    grid-area: grupo;
+}
+
+.container-completo {
+    grid-area: container-completo;
+    width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.8s ease, border-right 0.8s ease, border-bottom 0.8s ease step-start;
+    box-shadow: none;
+    border: 1px solid transparent;
+    margin: 25px;
+
+}
+
+.container-completo:hover {
+    box-shadow: 10px 10px rgb(148, 144, 144);
+    border-bottom: 2px solid orangered;
+    border-right: 2px solid orangered;
+}
+
+.container-completo * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.parte-imagem {
+    background-color: yellow;
+    height: 250px;
+
+}
+
+.parte-imagem img {
+    width: 250px;
+    overflow: hidden;
+}
+
+.parte-descricao {
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.parte-preco {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+
+
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main main IMAGE"
+    "main main main extra"
+    "Banner Banner Banner Banner"
+    ;
+  }
+
+  header{
+    grid-area: header;
+    background-color: black;
+  }
+
+  nav{
+    grid-area: menu;
+    background-color: red;
+  }
+  #hero{
+    grid-area: hero;
+    background-color: blue;
+  }
+
+  main{
+    grid-area: main;
+    background-color: navy;
+  }
+
+  #banner{
+    grid-area: Banner;
+    background-color:yellow;
+  }
+
+  #image{
+    grid-area: IMAGE;
+    background: lightblue;
+  }
+  #extra{
+    grid-area: extra;
+    background-color: aquamarine;
+  }
+*/
