@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 2fr 3fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "rodape rodape rodape rodape"
+  ;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+}
+
+
+main {
+  grid-area: main;
+
+}
+
+#rodape {
+  grid-area: rodape;
+  background-color: yellow;
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-completo {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.8s ease, border-right 0.8s ease, border-bottom 0.8s ease step-start;
+    box-shadow: none;
+    border: 1px solid transparent;
+    margin: 25px;
+
+}
+
+.container-completo:hover {
+    box-shadow: 10px 10px rgb(148, 144, 144);
+    border-bottom: 2px solid orangered;
+    border-right: 2px solid orangered;
+}
+
+.container-completo * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 350px;
+    height: 200px;
+}
+
+.parte-imagem {
+    background-color: yellow;
+
+
+}
+
+.parte-imagem img {
+    overflow: hidden;
+}
+
+.parte-descricao {
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.parte-preco {
+    background-color: red;
+    overflow: hidden;
+
+
+}
+

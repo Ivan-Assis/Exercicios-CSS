@@ -1,0 +1,19 @@
+nav {
+    grid-area: menu;
+    background-color: red;
+  }
+  
+  #hero {
+    grid-area: hero;
+    background-color: blue;
+  }
+  
+  #image {
+    grid-area: IMAGE;
+    background: lightblue;
+  }
+  
+  #extra {
+    grid-area: extra;
+    background-color: aquamarine;
+  }
